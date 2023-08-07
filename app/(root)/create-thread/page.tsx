@@ -1,3 +1,5 @@
+
+
 import { currentUser } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
 
@@ -16,7 +18,7 @@ async function Page() {
     <>
       <h1 className='head-text'>Create Thread</h1>
 
-      <PostThread userId={userInfo._id} />
+      <PostThread userId={userInfo._id.toString()} />
     </>
   );
 }
